@@ -1,0 +1,37 @@
+{
+    "name": "nguyentn/netsuite-laravel",
+    "description": "NetSuite PHP laravel provider wrapper",
+    "keywords": [ "netsuite", "api", "php", "laravel" ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+      {
+        "name": "Nguyen Thanh Nguyen",
+        "email": "ntnguyen0310@gmail.com"
+      }
+    ],
+    "require": {
+      "php": "^7.2.5|^8",
+      "ntn/netsuite-php": "*"
+    },
+    "require-dev": {
+      "illuminate/config": "^7|^8",
+      "illuminate/support": "^7|^8"
+    },
+    "autoload": {
+      "psr-4": {
+        "NetSuite\\": "src/"
+      }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+      "laravel": {
+        "providers": [
+          "NetSuite\\Providers\\NetSuiteServiceProvider"
+        ],
+        "aliases": {
+          "NetSuite": "NetSuite\\Facades\\NetSuite"
+        }
+      }
+    }
+  }
